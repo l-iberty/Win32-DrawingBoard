@@ -9,7 +9,7 @@ class Dragger {
     ~Dragger() = default;
 
     Dragger(const Dragger &) = delete;
-    Dragger operator=(const Dragger &) = delete;
+    Dragger &operator=(const Dragger &) = delete;
 
     void Start(const POINT &pt) {
         m_start = pt;
